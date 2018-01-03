@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
 <?import java.util.*?>
@@ -7,8 +9,29 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_intelui.FXMLController">
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="700.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_intelui.FXMLController">
     <stylesheets>
-        <URL value="@fxml.css"/>
+        <URL value="@fxml.css" />
     </stylesheets>
+    <children>
+        <AnchorPane prefHeight="430.0" prefWidth="200.0" style="-fx-background-color: #f0f7ff;">
+            <children>
+                <AnchorPane prefHeight="430.0" prefWidth="32.0" style="-fx-background-color: #fff;">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </AnchorPane>
+            <JFXButton layoutY="55.0" prefHeight="50.0" prefWidth="217.0" text="All Processors" />
+            <JFXButton layoutY="105.0" prefHeight="50.0" prefWidth="217.0" text="Intel" />
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </AnchorPane>
+        <AnchorPane layoutX="200.0" layoutY="-1.0" prefHeight="430.0" prefWidth="503.0">
+            <effect>
+                <DropShadow />
+            </effect>
+        </AnchorPane>
+    </children>
 </AnchorPane>
