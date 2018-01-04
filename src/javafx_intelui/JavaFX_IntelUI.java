@@ -1,15 +1,16 @@
 /*
  */
-
 package javafx_intelui;
 
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+
 /**
  *
  * @author daniildeveloper
@@ -18,24 +19,17 @@ public class JavaFX_IntelUI extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
+        try {
+            AnchorPane root = (AnchorPane) FXMLLoader.load(getClass().getResource("FXML.fxml"));
 
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
-            }
-        });
+            Scene scene = new Scene(root, 1280, 650);
 
-        StackPane root = new StackPane();
-        root.getChildren().add(btn);
-
-        Scene scene = new Scene(root, 300, 250);
-
-        primaryStage.setTitle("Hello World!");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+            primaryStage.setTitle("Intel UI!");
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(JavaFX_IntelUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**

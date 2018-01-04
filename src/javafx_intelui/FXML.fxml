@@ -14,15 +14,17 @@
         <URL value="@fxml.css" />
     </stylesheets>
     <children>
-        <AnchorPane prefHeight="430.0" prefWidth="200.0" style="-fx-background-color: #f0f7ff;">
+        <AnchorPane prefHeight="430.0" prefWidth="200.0" style="-fx-background-color: #f0f7ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <AnchorPane prefHeight="430.0" prefWidth="32.0" style="-fx-background-color: #fff;">
+                <AnchorPane prefHeight="430.0" prefWidth="32.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <effect>
                         <DropShadow />
                     </effect>
                 </AnchorPane>
-            <JFXButton layoutY="55.0" prefHeight="50.0" prefWidth="217.0" text="All Processors" />
-            <JFXButton layoutY="105.0" prefHeight="50.0" prefWidth="217.0" text="Intel" />
+                <JFXButton layoutY="55.0" prefHeight="50.0" prefWidth="217.0" text="All Processors" />
+                <JFXButton layoutY="105.0" prefHeight="50.0" prefWidth="217.0" text="Intel Core" />
+                <JFXButton layoutY="155.0" prefHeight="50.0" prefWidth="217.0" text="Intel Xeon" />
+                <JFXButton layoutY="205.0" prefHeight="50.0" prefWidth="217.0" text="Intel Atom" />
             </children>
             <effect>
                 <DropShadow />
@@ -32,6 +34,12 @@
             <effect>
                 <DropShadow />
             </effect>
+         <children>
+            <Pane prefHeight="430.0" prefWidth="506.0" style="-fx-background-color: #23ce6b;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Pane layoutX="14.0" prefHeight="430.0" prefWidth="492.0" />
+            <Pane prefHeight="430.0" prefWidth="492.0" />
+            <Pane blendMode="DARKEN" layoutX="10.0" layoutY="10.0" prefHeight="430.0" prefWidth="492.0" />
+         </children>
         </AnchorPane>
     </children>
 </AnchorPane>
